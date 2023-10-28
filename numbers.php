@@ -1,17 +1,19 @@
 <?php
 
+
 require 'vendor/autoload.php';
+
 use GuzzleHttp\Client;
-header('Content-Type: text/html; charset=utf-8');
+
+
 
 //Создаем переменные для уточнения страны
-$number =$_GET['number'];
+$number = $_GET['number'];
 
-$country='';
+$country = '';
 
 
-
-if ($number[0]!='+') {
+if ($number[0] != '+') {
     $number = '+' . $number;
 }
 
