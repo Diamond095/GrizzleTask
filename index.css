@@ -5,8 +5,8 @@ body {
 .popup {
     display: none;
     position: fixed;
-    top: 65%;
-    transform: translate(10%, 0%);
+    z-index:5;
+    transform: translate(calc(95vw - 300px), calc(95vh - 226px - 128px));
     background-color: #f8f9fa;
     padding: 20px;
     border: 1px solid #ced4da;
@@ -110,4 +110,10 @@ h1 {
     display: grid;
     grid-template-columns: 0.3fr 0.5fr;
     gap: 1vw;
+}
+#btn-white{
+    color:white;
+}
+#accept-btn{
+    color:white;
 }

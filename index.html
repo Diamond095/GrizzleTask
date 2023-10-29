@@ -20,19 +20,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
     <link href="index.css" rel="stylesheet">
-    <script src="script.js"></script>
+
 </head>
 
 <body>
     <form action="numbers.php" method="GET">
         <input type="text" class="form-control" name="number" placeholder="Введите номер телефона">
-        <button type="submit" class="btn btn-success">Узнать страну</button>
+        <button type="submit"  id="btn-white" class="btn btn-success">Узнать страну</button>
     </form>
     <div id="popup" class="popup">
         <div class="popup-content">
             <p class="message">Мы используем файлы cookie на этом сайте, чтобы обеспечить вам лучшее пользовательское взаимодействие.
                 Нажмите "Принять", чтобы закрыть это сообщение.</p>
-            <button id="accept-btn" class="btn btn-primary">Принять</button>
+            <button id="accept-btn"  class="btn btn-primary">Принять</button>
             <button id="close-btn" class="btn btn-secondary">Закрыть</button>
         </div>
     </div>
@@ -106,31 +106,6 @@
         </div>
     </div>
 </body>
-<script>
-// Проверяем, есть ли уже куки
-if (document.cookie.indexOf("popup=accepted") === -1) {
-// Показываем попап
-    document.getElementById("popup").style.display = "block";
-}
-
-// Обработчик кнопки Принять
-document.getElementById("accept-btn").addEventListener("click", function() {
-// Записываем куки на 1 день
-    var now = new Date();
-    now.setTime(now.getTime() + 24 * 60 * 60 * 1000);
-    document.cookie = "popup=accepted; expires=" + now.toUTCString();
-
-// Скрываем попап
-    document.getElementById("popup").style.display = "none";
-});
-
-// Обработчик кнопки Закрыть
-document.getElementById("close-btn").addEventListener("click", function() {
-// Показываем попап при обновлении страницы
-    document.cookie = "popup=closed";
-
-// Скрываем попап
-    document.getElementById("popup").style.display = "none";
-});
+<script src="script.js">
 </script>
 </html>
