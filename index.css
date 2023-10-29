@@ -1,0 +1,113 @@
+body {
+    color: #efefef;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 65%;
+    transform: translate(10%, 0%);
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    max-width: 300px;
+}
+.message{
+    color:rgb(0, 0, 0);
+}
+.popup-content {
+    text-align: center;
+}
+
+.btn {
+    margin: 20px;
+    color:rgb(0, 0, 0);
+}
+
+.form-control {
+    width: 60vw;
+    margin: 20px;
+}
+
+.info {
+    display: flex;
+    width: 66vw;
+    height: 33vw;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 10px 6px #7575751A;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.color-logo {
+    width: 13vw;
+    height: 13vw;
+    bottom: 10vw;
+    position: relative;
+    margin-left: 3vw;
+}
+
+.colorless-logo {
+    width: 19vw;
+    height: 18vw;
+    margin-left: 5vw;
+
+}
+
+.img {
+    margin-left: 3vw;
+}
+
+.text {
+    margin-left: 4vw;
+    width: 60vw;
+}
+
+h1 {
+    color: #2E2E2E;
+    font-family: Nunito;
+    font-size: 2vw;
+    font-weight: 700;
+    line-height: 2.7vw;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+
+.short-plus {
+    font-family: Nunito;
+    font-size: 1.3vw;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2E2E2E;
+    max-width: 20vw;
+    margin: 0;
+}
+
+.plus {
+    width: 17vw;
+    height: 5vw;
+}
+
+.description-plus {
+    color: #2E2E2E;
+    font-family: Nunito;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    max-width: 15vw;
+    margin: 0;
+}
+
+.pluses-company {
+    display: grid;
+    grid-template-columns: 0.3fr 0.5fr;
+    gap: 1vw;
+}
